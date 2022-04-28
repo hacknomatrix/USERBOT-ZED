@@ -69,9 +69,9 @@ async def startupmessage():
         if BOTLOG:
             Config.CATUBLOGO = await catub.tgbot.send_file(
                 BOTLOG_CHATID,
-                "https://telegra.ph/file/4e3ba8e8f7e535d5a2abe.jpg",
-                caption="**Your CatUserbot has been started successfully.**",
-                buttons=[(Button.url("Support", "https://t.me/catuserbot"),)],
+                "https://telegra.ph/file/0a08de54b05d86f92c790.jpg",
+                caption="**HII ZED SWEET HEART!❤ , I'M UP NOW .**",
+                buttons=[(Button.url("Support", "https://t.me/kindevils"),)],
             )
     except Exception as e:
         LOGS.error(e)
@@ -87,7 +87,7 @@ async def startupmessage():
         if msg_details:
             await catub.check_testcases()
             message = await catub.get_messages(msg_details[0], ids=msg_details[1])
-            text = message.text + "\n\n**Ok Bot is Back and Alive.**"
+            text = message.text + "\n\n**Ok I am Back and Alive darling❤.**"
             await catub.edit_message(msg_details[0], msg_details[1], text)
             if gvarstatus("restartupdate") is not None:
                 await catub.send_message(
